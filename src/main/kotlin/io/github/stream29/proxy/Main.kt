@@ -1,16 +1,15 @@
 package io.github.stream29.proxy
 
-import kotlinx.coroutines.delay
+import com.formdev.flatlaf.FlatDarkLaf
+import io.github.stream29.proxy.ui.ProxyUI
+import kotlinx.coroutines.runBlocking
+import javax.swing.SwingUtilities
+import javax.swing.UIManager
 
-suspend fun main() {
-    try {
-        // Just to initialize Global.kt
-        config
-    } catch (t: Throwable) {
-        t.printStackTrace()
-        println("Failed to init proxy: ${t.message}")
-    }
-    while (true) {
-        delay(10000)
+fun main() {
+    SwingUtilities.invokeLater {
+        val ui = ProxyUI()
+        ui.isVisible = true
+        ui.startService()
     }
 }

@@ -4,10 +4,12 @@ graalvm-buildtools = "0.10.6"
 gradleup-shadow = "8.3.5"
 ktor = "3.1.2"
 kotlinx-serialization = "1.6.2"
+kotlinx-coroutines = "1.8.0"
 logback = "1.4.11"
 streamlin = "3.1.0"
 json-schema-generator = "1.0.5"
 kaml = "0.77.1"
+flatlaf = "3.4"
 
 
 [libraries]
@@ -25,10 +27,14 @@ ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "k
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
 
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
 
 streamlin = { module = "io.github.stream29:streamlin", version.ref = "streamlin" }
 json-schema-generator = { module = "io.github.stream29:json-schema-generator", version.ref = "json-schema-generator" }
 kaml = { module = "com.charleskorn.kaml:kaml", version.ref = "kaml" }
+
+flatlaf = { module = "com.formdev:flatlaf", version.ref = "flatlaf" }
+flatlaf-extras = { module = "com.formdev:flatlaf-extras", version.ref = "flatlaf" }
 
 logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 
@@ -37,4 +43,3 @@ kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 graalvm-buildtools = { id = "org.graalvm.buildtools.native", version.ref = "graalvm-buildtools" }
 gradleup-shadow = { id = "com.gradleup.shadow", version.ref = "gradleup-shadow" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-

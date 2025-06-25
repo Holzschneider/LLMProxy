@@ -29,9 +29,14 @@ dependencies {
 
     implementation(libs.ktor.serialization.kotlinx.json)
     implementation(libs.kotlinx.serialization.json)
-    
+    implementation(libs.kotlinx.coroutines.swing)
+
     implementation(libs.logback.classic)
-    
+
+    // UI
+    implementation(libs.flatlaf)
+    implementation(libs.flatlaf.extras)
+
     implementation(libs.streamlin)
     implementation(libs.json.schema.generator)
     implementation(libs.kaml)
@@ -56,4 +61,3 @@ graalvmNative {
         }
     }
 }
-

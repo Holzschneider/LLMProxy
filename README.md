@@ -1,8 +1,22 @@
-# ProxyAsLocalModel
+# LLM Proxy
 
 Proxy remote LLM API as Local model. Especially works for using custom LLM in JetBrains AI Assistant.
 
 Powered by Ktor and kotlinx.serialization. Thanks to their no-reflex features.
+
+## Fork
+
+_This is a fork of https://github.com/Stream29/ProxyAsLocalModel_
+
+This fork adds:
+
+- A Swing-based graphical user interface with FlatLaf dark theme with 
+  - Automatic service startup through the UI
+  - Activity Logging in the UI 
+- Custom window decorations that match the FlatLaf style
+  - Modern integrated appearance consistent with the dark theme
+  - Custom fancy titlebar (not on macOS)
+- ...
 
 ## Story of this project
 
